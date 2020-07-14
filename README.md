@@ -10,11 +10,11 @@ Running and installing the application:
 Initialization of node packages
 
 ```
-Run npm install
+npm install
 ```
 start app.
 ```
-Run npm main.js to 
+npm main.js
 ```
 Application will be running on:
 ```
