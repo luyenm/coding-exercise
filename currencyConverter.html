@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Currency Converter</title>
+    <link rel="stylesheet"
+          href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+          integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk"
+          crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="currencyConverter.css">
+    <script src="currencyConverter.js"></script>
+</head>
+<body>
+    <div id="pageContent">
+        <div>
+            Welcome, please input the amount you wish to convert from Euros:
+        </div>
+        <div>
+            Enter date from when to convert currency.
+            <div id="dateInput">
+                <div class="w-2">
+                    <div>
+                        <label>DD</label>
+                    </div>
+                    <input type="number" id="days" value="13" maxlength="2"/>
+                </div>
+                <div class="w-2">
+                    <div>
+                        <label>MM</label>
+                    </div>
+                    <input type="number" id="months" value="07" maxlength="2"/>
+                </div>
+                <div class="w-4">
+                    <div>
+                        <label>YYYY</label>
+                    </div>
+                    <input type="number" id="years" value="2020" maxlength="4"/>
+                </div>
+            </div>
+            <button id="setDateButton">Set Date</button>
+        </div>
+        <div id="currencyForm">
+            <div class="currency-field">
+                <div>
+                    <label for="currencyInput">Amount (€)</label>
+                </div>
+                <input class="currency-holder" type="number" id="currencyInput" placeholder="0.00"/>
+            </div>
+
+            <div class="currency-field">
+                <div>
+                    <label for="currencySelect">Currency</label>
+                </div>
+                <select class="currency-holder" id="currencySelect">
+                </select>
+            </div>
+            <div class="currency-field">
+                <div>
+                    Rate
+                </div>
+                <div class="rate-text" id="rateField">
+
+                </div>
+            </div>
+            <div class="currency-field">
+                <div>
+                    Result
+                </div>
+                <div class="rate-text" id="convertedCurrency">
+                    $0.00
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,38 @@
+#pageContent {
+    max-width: 600px;
+    margin: auto;
+}
+
+#dateInput {
+    display: flex;
+}
+
+#currencyInput {
+
+}
+
+#currencyForm {
+    display: flex;
+}
+
+.currency-field {
+    width: 200px;
+}
+.currency-holder {
+   height: 40px;
+    width: 100%;
+}
+
+.w-2 {
+    width: 2em;
+}
+
+.w-4 {
+    width: 4em;
+}
+
+.rate-text {
+    padding-top: 16px;
+    padding-left: 4px;
+}
+
